@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+{% block title %}{{ticket.question}}{% endblock %}
+{% block body %}
+<div class="container">
+    <div class="row mt4 ">
+        <div class="col-6 mx-auto">
+            <div class"card bg-light rounded">
+                <h3 class="card-title text-default p4">
+                        {{ticket.question}}
+                </h3></br>
+                <div class"card-body mt-2 rounded">
+                    <div class="media">
+                            <div class="media-body">
+                            <h5 class="text-left"> Voir tous les réponses: <h5>
+                                <blockquote  class="lead text-left" style="background-color: rgba(255, 255, 128, .5); ">
+                            {{ticket.response}}
+                                </blockquote>
+                            </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
