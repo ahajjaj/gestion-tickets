@@ -26,6 +26,7 @@ class Issue
      */
     private $Response;
 
+       
     public function getId(): ?int
     {
         return $this->id;
@@ -54,4 +55,5 @@ class Issue
 
         return $this;
     }
+
 }

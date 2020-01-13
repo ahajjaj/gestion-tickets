@@ -60,7 +60,7 @@ RouterInterface $router)
         $this->entityManager->remove($ticket);
         $this->entityManager->flush();
         return new RedirectResponse(
-            $this->router->generate('home')
+            $this->router->generate('ticket')
         );
     }
    /**
@@ -76,7 +76,7 @@ RouterInterface $router)
                 $this->router->generate('ticket')
             );
         }
-        return $this->render('edit.html.twig',[
+        return $this->render('ticket/edit.html.twig',[
             'form' => $form->createView()
         ]);
     }

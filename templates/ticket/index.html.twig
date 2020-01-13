@@ -19,7 +19,8 @@
         <tr>
             <th style="text-align: center;"> <a href="{{path('ticket_show', {'id':ticket.id})}}">{{ticket.question}}</a></th> 
             <th style="text-align: center;"> {{ticket.response}}</th> 
-            <th style="text-align: center;">
+            <th style="text-align: center;"> <a href="{{path('ticket_edit', {'id':ticket.id})}}" class="btn btn-outline-warning btn-sm float mr-2">Modifier</a></th> 
+            <th style="text-align: center;"> <a href="{{path('ticket_delete', {'id':ticket.id})}}" class="btn btn-outline-danger btn-sm float-right mr-2">Supprimer</a></th>                                       
                                       
         </tr>
         {% endfor %} 
